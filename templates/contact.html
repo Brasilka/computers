@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Контакт с нами{% endblock %}
+{% block content %}
+<h1>Контакт</h1>
+<form method="POST">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="message">Сообщение:</label>
+    <textarea id="message" name="message"></textarea><br>
+    <button type="submit">Отправить</button>
+</form>
+{% if success %}
+    <p>Сообщение отправлено успешно!</p>
+{% endif %}
+{% endblock %}

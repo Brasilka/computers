@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Компьютеры{% endblock %}
+{% block content %}
+<h1>Комьютер</h1>
+<ul>
+    {% for computer in computers %}
+        <li>{{ computer.name }} - {{ computer.description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
